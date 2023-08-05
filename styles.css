@@ -1,0 +1,124 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu li a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /* Responsif: menu akan disembunyikan pada layar kecil */
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }
+  
+  /* Section */
+  .section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Card */
+  .card {
+    /* Mengubah tata letak card menjadi horizontal */
+    flex: 0 0 calc(30% - 5px);
+    max-width: calc(30% - 5px);
+    /* Lebar card */
+    width: 100%;
+    box-sizing: border-box;
+  
+    /* Warna latar belakang dan bayangan */
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    /* Jarak antar card */
+    margin: 1%;
+  
+    /* Memberikan jarak pada isi card */
+    padding: 20px;
+  
+    /* Membuat pojok card menjadi sedikit melengkung */
+    border-radius: 10px;
+  }
+  
+  /* Judul card */
+  .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Isi card */
+  .card p {
+    font-size: 16px;
+  }
+  
+  /* Memberikan warna latar belakang saat card dihover (opsional) */
+  .card:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
